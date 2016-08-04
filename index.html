@@ -7,7 +7,7 @@ country: "AU"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-19.329383, 146.759118"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "Sept 27-28, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-09-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2016-09-28        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Jay van Schyndel", "Daniel Baird"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -120,30 +120,6 @@ eventbrite: "26935328292"          # optional: alphanumeric key for Eventbrite r
 </p>
 
 <!--
-  ACCESSIBILITY
-
-  Modify the block below if there are any barriers to accessibility or
-  special instructions.
--->
-<p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody.
-  The workshop organisers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  <a href="mailto:{{page.contact}}">get in touch</a> and we will
-  attempt to provide them.
-</p>
-
-<!--
   CONTACT EMAIL ADDRESS
 
   Display the contact email address set in the configuration file.
@@ -176,23 +152,29 @@ eventbrite: "26935328292"          # optional: alphanumeric key for Eventbrite r
   <div class="col-md-6">
     <h3>Tuesday</h3>
     <table class="table table-striped">
+      <tr> <td>08:30</td>  <td>Setting up and software installation help</td> </tr>
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>10:30</td>  <td>Morning tea</td> </tr>
+      <tr> <td>11:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td>  <td>Introduction to R</td> </tr>
+      <tr> <td>15:00</td>  <td>Afternoon tea</td> </tr>
+      <tr> <td>15:30</td>  <td>RStudio, R help</td> </tr>
+      <tr> <td>16:45</td>  <td>Wrapup</td> </tr>      
     </table>
   </div>
   <div class="col-md-6">
     <h3>Wednesday</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30</td>  <td>Setting up and software installation help</td> </tr>
+      <tr> <td>09:00</td>  <td>Version control with Git - Intro</td> </tr>
+      <tr> <td>10:30</td>  <td>Morning tea</td> </tr>
+      <tr> <td>11:00</td>  <td>Version control with Git - collaboration</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td>  <td>Graphing and using packages in R</td> </tr>
+      <tr> <td>15:00</td>  <td>Afternoon tea</td> </tr>
+      <tr> <td>15:30</td>  <td>Making your own R scripts</td> </tr>
+      <tr> <td>16:45</td>  <td>Wrapup</td> </tr>      
     </table>
   </div>
 </div>
@@ -254,35 +236,31 @@ eventbrite: "26935328292"          # optional: alphanumeric key for Eventbrite r
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
+    <h3 id="syllabus-r">Programming in R</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
+      <li>Working with vectors and data frames</li>
       <li>Reading and plotting data</li>
       <li>Creating and using functions</li>
       <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_github_io}}/python-novice-inflammation/reference/">Reference...</a></li>
+      <li>Using R from the command line</li>
+      <li><a href="{{site.swc_github_io}}/r-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_github_io}}/git-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3 id="syllabus-git">Version Control with Git</h3>
+      <ul>
+        <li>Creating a repository</li>
+        <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+        <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+        <li>Ignoring files</li>
+        <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+        <li>Resolving conflicts</li>
+        <li>Open licenses</li>
+        <li>Where to host work, and why</li>
+        <li><a href="{{site.swc_github_io}}/git-novice/reference/">Reference...</a></li>
+      </ul>
+    </div>
 </div>
 
 <hr/>
